@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(#F8235F, #852466);
+  height: 100vh;
+  text-align: center;
+}
+
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+}
