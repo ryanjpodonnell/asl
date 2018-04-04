@@ -11,15 +11,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <div class="logo">
-      <img src="images/logo.png">
+    <div class="container">
+      <img class="img-fluid" src="images/logo.png">
+
+      <h1>A/S/L</h1>
+      <h2>Welcome to the Alameda Selfie League</h2>
+
+      <button type="button" class="btn btn-secondary" id="trigger-about">About</button>
+      <button type="button" class="btn btn-secondary" id="trigger-venues">Venues</button>
+      <button type="button" class="btn btn-secondary" id="trigger-rules">Rules</button>
+      <button type="button" class="btn btn-secondary" id="trigger-links">Links</button>
+
+      <div id="content">
+        <p id="about">About</p>
+        <p id="venues">Venues</p>
+        <p id="rules">Rules</p>
+        <p id="links">Links</p>
+      </div>
     </div>
-
-    <h1>A/S/L</h1>
-
-    <h2>Welcome to the Alameda Selfie League</h2>
-
-    <button type="button" class="btn btn-secondary" id="trigger">Click me</button>
-    <p id="demo"></p>
   </body>
 </html>

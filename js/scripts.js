@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#trigger").click(function() {
-    $("#demo").html("Hello, World!");
+  $("#trigger-about").click(function() {
+    $('#content').childen().hide();
+    $('#about').unhide();
   });
 });
