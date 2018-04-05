@@ -3,3 +3,7 @@ body {
   height: 100vh;
   text-align: center;
 }
+
+.content {
+  margin-top: 1em;
+}

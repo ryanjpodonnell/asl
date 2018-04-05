@@ -14,18 +14,39 @@
     <div class="container">
       <img class="img-fluid" src="images/logo.png">
 
-      <h2>Welcome to the Alameda Selfie League</h2>
+      <div>
+        <button type="button" class="btn btn-secondary" id="trigger-about">About</button>
+        <button type="button" class="btn btn-secondary" id="trigger-rules">Rules</button>
+        <button type="button" class="btn btn-secondary" id="trigger-links">Links</button>
+      </div>
 
-      <button type="button" class="btn btn-secondary" id="trigger-about">About</button>
-      <button type="button" class="btn btn-secondary" id="trigger-venues">Venues</button>
-      <button type="button" class="btn btn-secondary" id="trigger-rules">Rules</button>
-      <button type="button" class="btn btn-secondary" id="trigger-links">Links</button>
+      <div id="about" class="content" style="display: none;">
+        <h2>Welcome to the Alameda Selfie League</h2>
+        <p class="lead">
+        This is a cool website made my a cool guy and gal.
+        </p>
+      </div>
 
-      <div id="content">
-        <p id="about" style="display: none;">About</p>
-        <p id="venues" style="display: none;">Venues</p>
-        <p id="rules" style="display: none;">Rules</p>
-        <p id="links" style="display: none;">Links</p>
+      <div id="rules" class="content" style="display: none;">
+        <p class="lead">These are some of the rules.</p>
+        <p>And here is some more info</p>
+      </div>
+
+      <div id="links" class="content" style="display: none;">
+        <div class="list-group">
+          <a href="https://matchplay.events/" class="list-group-item list-group-item-action">
+            Match Play
+          </a>
+          <a href="https://www.pacificpinball.org/" class="list-group-item list-group-item-action">
+            Pacific Pinball Museum
+          </a>
+          <a href="http://www.thefiresidelounge.com/" class="list-group-item list-group-item-action">
+            The Fireside Lounge
+          </a>
+          <a href="mailto:ryan.jp.odonnell@gmail.com" class="list-group-item list-group-item-action">
+            Contact
+          </a>
+        </div>
       </div>
     </div>
   </body>
