@@ -5,6 +5,7 @@
     <title>A/S/L</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Roboto+Condensed">
   </head>
 
   <body>
@@ -12,24 +13,53 @@
     <script src="js/scripts.js"></script>
 
     <div class="container">
-      <img class="img-fluid" src="images/logo.png">
+      <img class="img-fluid" id="trigger-about" src="images/logo.png">
 
       <div>
-        <button type="button" class="btn btn-secondary" id="trigger-about">About</button>
-        <button type="button" class="btn btn-secondary" id="trigger-rules">Rules</button>
-        <button type="button" class="btn btn-secondary" id="trigger-links">Links</button>
+        <button type="button" class="hologram-btn" id="trigger-rules">Rules</button>
+        <button type="button" class="hologram-btn" id="trigger-games">Games</button>
+        <button type="button" class="hologram-btn" id="trigger-links">Links</button>
       </div>
 
-      <div id="about" class="content" style="display: none;">
-        <h2>Welcome to the Alameda Selfie League</h2>
+      <div id="about" class="content">
+        <h2>Welcome</h2>
+        <hr>
         <p class="lead">
-        This is a cool website made my a cool guy and gal.
+        Alameda Selfie League is a play at your own pace, on your own time pinball league with a finals tournament at the end of the season. The league is free to join and open to all skill levels. All you need are quarters and a device to take a selfie with your score!
+        </p>
+        <p>
+        The current season runs from DATE to DATE.<br>
+        Finals will be held on DATE at TIME.
         </p>
       </div>
 
+      <div id="games" class="content" style="display: none;">
+        <h2>Current Lineup</h2>
+        <hr>
+        <h3>Pacific Pinball Museum</h3>
+        <h6>LOCATION</h6>
+        <p>Game 1</p>
+        <p>Game 2</p>
+        <p>Game 3</p>
+        <p>Game 4</p>
+        <p>Game 5*</p>
+        <p>Game 6*</p>
+        <p><em>* requires museum entrance fee or membership</em></p>
+        <h3>Fireside</h3>
+        <h6>LOCATION</h6>
+        <p>Game 1</p>
+        <p>Game 2</p>
+      </div>
+
       <div id="rules" class="content" style="display: none;">
-        <p class="lead">These are some of the rules.</p>
-        <p>And here is some more info</p>
+        <h2>Rules</h2>
+        <hr>
+        <h3>Selfies</h3>
+        <p>Score must be legible in photos for approval. Selfies must include yourself in the photo.</p>
+        <h3>Game Submissions</h3>
+        <p>Selfies must be submitted within 24 hours of when the photo was taken.</p>
+        <h3>Game Play</h3>
+        <p>Extra balls are allowed. Death saves and bang backs are not.</p>
       </div>
 
       <div id="links" class="content" style="display: none;">

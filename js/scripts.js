@@ -9,6 +9,11 @@ $(document).ready(function() {
     $('#rules').show();
   });
 
+  $("#trigger-games").click(function() {
+    $('.content').hide();
+    $('#games').show();
+  });
+
   $("#trigger-links").click(function() {
     $('.content').hide();
     $('#links').show();
