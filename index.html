@@ -3,96 +3,119 @@
   <head>
     <meta charset="UTF-8">
     <title>A/S/L</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
   </head>
 
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img id="trigger-about" src="images/logo.svg">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="rules-tab" data-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false">Rules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="games-tab" data-toggle="tab" href="#games" role="tab" aria-controls="games" aria-selected="false">Games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="link-tab" data-toggle="tab" href="#links" role="tab" aria-controls="links" aria-selected="false">Links</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <p>&nbsp;</p>
+
+        <div class="tab-pane show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+          <img id="img-fluid" src="images/logo.svg">
+
+          <h2>WELCOME</h2>
+          <hr>
+          <p>
+            Alameda Selfie League is a play at your own pace, on your own time pinball league with a finals tournament at the end of the season. The league is free to join and open to all skill levels. All you need are quarters and a device to take a selfie with your score!
+          </p>
+          <p class="lead">
+            The current season runs from May 1st to June 30th.<br>
+            Finals will be held on July 1st at 3PM at Pacific Pinball Museum.
+          </p>
+
+          <h3>How It Works</h3>
+          <ol>
+            <li>Play from <a href="#games" id="games-link" class="badge badge-primary">the list</a> of pinball machines.</li>
+            <li>Take a selfie with your score</li>
+            <li>Submit your photo to <a href="https://matchplay.events/live/5by81" class="badge badge-primary" target="blank">Matchplay</a></li>
+            <li>Get <a href="https://www.ifpapinball.com/tournaments/view.php?t=25085" class="badge badge-primary" target="blank">internationally ranked</a></li>
+          </ol>
         </div>
-      </div>
 
-      <p>
-        <button type="button" class="btn btn-primary" id="trigger-rules">Rules</button>
-        <button type="button" class="btn btn-primary" id="trigger-games">Games</button>
-        <button type="button" class="btn btn-primary" id="trigger-links">Links</button>
-      </p>
+        <div class="tab-pane" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+          <h3>Selfies</h3>
+          <p>Score must be legible in photos for approval. Selfies must include yourself in the photo.</p>
+          <h3>Game Submissions</h3>
+          <p>Selfies must be submitted to Match Play within 24 hours of when the photo was taken.</p>
+          <h3>Game Play</h3>
+          <p>Extra balls are allowed. Death saves and bang backs are not.</p>
+        </div>
 
-      <div id="about" class="content">
-        <h2>WELCOME</h2>
-        <hr>
-        <p>
-        Alameda Selfie League is a play at your own pace, on your own time pinball league with a finals tournament at the end of the season. The league is free to join and open to all skill levels. All you need are quarters and a device to take a selfie with your score!
-        </p>
-        <p class="lead">
-          The current season runs from May 1st to June 30th.<br>
-          Finals will be held on July 1st at 3PM at Pacific Pinball Museum.
-        </p>
-        <p>
-          <a href="https://www.ifpapinball.com/tournaments/view.php?t=25085" class="badge badge-primary" target="blank">IFPA DETAILS</a>
-        </p>
-      </div>
-
-      <div id="games" class="content" style="display: none;">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Pacific Pinball Museum</h3>
-            <p>
-              <a href="https://goo.gl/maps/5c7Lre1bC952" class="badge badge-primary" target="blank">1510 WEBSTER ST, ALAMEDA, CA 94501</a>
-            </p>
-            <ul class="list-group">
-              <li class="list-group-item">Black Knight 2000*</li>
-              <li class="list-group-item">Dialed In</li>
-              <li class="list-group-item">El Dorado*</li>
-              <li class="list-group-item">Frontier</li>
-              <li class="list-group-item">Funhouse*</li>
-              <li class="list-group-item">Ghostbusters Pro</li>
-              <li class="list-group-item">Lethal Weapon 3*</li>
-              <li class="list-group-item">Tron Pro*</li>
-              <li class="list-group-item">Whirlwind</li>
-            </ul>
-            <p>
-              <em>* requires museum entrance fee or membership</em>
-            </p>
+        <div class="tab-pane" id="games" role="tabpanel" aria-labelledby="games-tab">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Pacific Pinball Museum</h3>
+              <p>
+                <a href="https://goo.gl/maps/5c7Lre1bC952" class="badge badge-primary" target="blank">1510 WEBSTER ST, ALAMEDA, CA 94501</a>
+              </p>
+              <ul class="list-group">
+                <li class="list-group-item">Black Knight 2000*</li>
+                <li class="list-group-item">Dialed In</li>
+                <li class="list-group-item">El Dorado*</li>
+                <li class="list-group-item">Frontier</li>
+                <li class="list-group-item">Funhouse*</li>
+                <li class="list-group-item">Ghostbusters Pro</li>
+                <li class="list-group-item">Lethal Weapon 3*</li>
+                <li class="list-group-item">Tron Pro*</li>
+                <li class="list-group-item">Whirlwind</li>
+              </ul>
+              <p>
+                <em>* requires museum entrance fee or membership</em>
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>The Fireside Lounge</h3>
+              <p>
+                <a href="https://goo.gl/maps/RFMWMCpLhS52" class="badge badge-primary" target="blank">1453 WEBSTER ST, ALAMEDA, CA 94501</a>
+              </p>
+              <ul class="list-group">
+                <li class="list-group-item">Black Rose</li>
+                <li class="list-group-item">Fire Queen</li>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h3>The Fireside Lounge</h3>
-            <p>
-              <a href="https://goo.gl/maps/RFMWMCpLhS52" class="badge badge-primary" target="blank">1453 WEBSTER ST, ALAMEDA, CA 94501</a>
-            </p>
-            <ul class="list-group">
-              <li class="list-group-item">Black Rose</li>
-              <li class="list-group-item">Fire Queen</li>
+        </div>
+
+        <div class="tab-pane" id="links" role="tabpanel" aria-labelledby="games-tab">
+          <div class="list-group">
+            <a href="https://matchplay.events/live/5by81" class="list-group-item list-group-item-action" target="blank">Match Play</a>
+            <a href="https://www.ifpapinball.com/tournaments/view.php?t=25085" class="list-group-item list-group-item-action" target="blank">IFPA Page</a>
+            <a href="https://www.pacificpinball.org/" class="list-group-item list-group-item-action" target="blank">Pacific Pinball Museum</a>
+            <a href="http://www.thefiresidelounge.com/" class="list-group-item list-group-item-action" target="blank">The Fireside Lounge</a>
+            <a href="mailto:ryan.jp.odonnell@gmail.com" class="list-group-item list-group-item-action">Contact</a>
           </div>
         </div>
       </div>
 
-      <div id="rules" class="content" style="display: none;">
-        <h3>Selfies</h3>
-        <p>Score must be legible in photos for approval. Selfies must include yourself in the photo.</p>
-        <h3>Game Submissions</h3>
-        <p>Selfies must be submitted to Match Play within 24 hours of when the photo was taken.</p>
-        <h3>Game Play</h3>
-        <p>Extra balls are allowed. Death saves and bang backs are not.</p>
-      </div>
-
-      <div id="links" class="content" style="display: none;">
-        <div class="list-group">
-          <a href="https://matchplay.events/live/5by81" class="list-group-item list-group-item-action" target="blank">Match Play</a>
-          <a href="https://www.ifpapinball.com/tournaments/view.php?t=25085" class="list-group-item list-group-item-action" target="blank">IFPA Page</a>
-          <a href="https://www.pacificpinball.org/" class="list-group-item list-group-item-action" target="blank">Pacific Pinball Museum</a>
-          <a href="http://www.thefiresidelounge.com/" class="list-group-item list-group-item-action" target="blank">The Fireside Lounge</a>
-          <a href="mailto:ryan.jp.odonnell@gmail.com" class="list-group-item list-group-item-action">Contact</a>
-        </div>
-      </div>
       <p>&nbsp;</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('#games-link').on('click', function (e) {
+          e.preventDefault()
+          $('#myTab a[href="#games"]').tab('show')
+        })
+      })
+    </script>
   </body>
 </html>
